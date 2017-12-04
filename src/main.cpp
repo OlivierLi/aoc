@@ -1,6 +1,7 @@
 #include <iostream>
 #include "file_reader.hpp"
 #include "day1/solution.hpp"
+#include "day2/solution.hpp"
 
 int main(int argc, char** argv){
     if(argc != 2){
@@ -8,13 +9,13 @@ int main(int argc, char** argv){
         return -1;
     }
 
-    //Test the provided input
+    //Run the "tests" to validate no solution was broken 
+    test_1();
     test_1_2();
+    test_2();
 
     const std::vector<std::string>& lines = get_lines(argv[1]); 
-    for(const auto& line: lines){
-        std::cout << solution_1_2(line) << std::endl; 
-    }
+    std::cout << solution_2(lines, divisible) << std::endl; 
 
     return 0;
 }

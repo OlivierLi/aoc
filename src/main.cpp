@@ -3,8 +3,9 @@
 #include "day1/solution.hpp"
 #include "day2/solution.hpp"
 #include "day3/solution.hpp"
+#include "day4/solution.hpp"
 
-int main(int argc, char**){
+int main(int argc, char** argv){
     if(argc != 2){
         std::cout << "Only provide the input file name!" << std::endl; 
         return -1;
@@ -15,6 +16,7 @@ int main(int argc, char**){
     test_1_2();
     test_2();
     test_3();
+    test_4();
 
     return 0;
 }

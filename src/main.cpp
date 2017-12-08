@@ -7,11 +7,7 @@
 #include "day5/solution.hpp"
 #include "day6/solution.hpp"
 
-int main(int argc, char** /*argv*/){
-    if(argc != 2){
-        std::cout << "Only provide the input file name!" << std::endl; 
-        return -1;
-    }
+int main(int, char**){
 
     //Run the "tests" to validate no solution was broken 
     test_1();
@@ -19,6 +15,7 @@ int main(int argc, char** /*argv*/){
     test_2();
     test_3();
     test_4();
+    test_5();
     test_6();
 
     return 0;

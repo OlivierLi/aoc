@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <cassert>
 
 std::vector<std::string> get_lines(const std::string& file_name){
     std::ifstream my_file(file_name);
@@ -32,4 +33,19 @@ std::vector<T> parse_line(const std::string& line){
     }
 
     return vals;
+}
+
+// Very inneficient function to simply get a column
+template<typename T> 
+std::vector<T> read_col(const std::vector<std::string>& lines, size_t i){
+   
+   std::vector<T> col;
+
+   for(const auto& line : lines){
+        const auto& vals = parse_line<T>(line);
+       assert(i < vals.size());
+       col.push_back(vals.at(i));
+   } 
+
+   return col;
 }

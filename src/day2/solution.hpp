@@ -12,7 +12,9 @@ size_t diff_row(row_t row){
 size_t divisible(row_t row){
     // brute force!
     for(auto it1=row.begin();it1<row.end();++it1){
-        for(auto it2=row.begin();it2<row.end();++it2){
+        // Since we find the min and max, no nee to
+        // Start back from the beginning of the line
+        for(auto it2=it1;it2<row.end();++it2){
             if(it1 != it2){
                 auto big = std::max(*it1, *it2);
                 auto small = std::min(*it1, *it2);

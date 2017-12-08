@@ -4,6 +4,7 @@
 #include "day2/solution.hpp"
 #include "day3/solution.hpp"
 #include "day4/solution.hpp"
+#include "day5/solution.hpp"
 #include "day6/solution.hpp"
 
 int main(int argc, char** /*argv*/){

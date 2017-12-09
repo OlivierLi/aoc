@@ -6,17 +6,19 @@
 #include "day4/solution.hpp"
 #include "day5/solution.hpp"
 #include "day6/solution.hpp"
+#include "day7/solution.hpp"
 
 int main(int, char**){
 
     //Run the "tests" to validate no solution was broken 
-    test_1();
-    test_1_2();
-    test_2();
-    test_3();
-    test_4();
-    test_5();
-    test_6();
+    //test_1();
+    //test_1_2();
+    //test_2();
+    //test_3();
+    //test_4();
+    //test_5();
+    //test_6();
+    test_7();
 
     return 0;
 }

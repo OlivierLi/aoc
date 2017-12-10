@@ -42,10 +42,26 @@ std::vector<T> read_col(const std::vector<std::string>& lines, size_t i){
    std::vector<T> col;
 
    for(const auto& line : lines){
-        const auto& vals = parse_line<T>(line);
-       assert(i < vals.size());
-       col.push_back(vals.at(i));
+       const auto& vals = parse_line<T>(line);
+       if(i >= vals.size()){
+           col.push_back(T{});
+       }
+       else{
+           col.push_back(vals.at(i));
+       }
    } 
 
    return col;
+}
+
+std::vector<std::string> parse_csv(const std::string& line){
+
+    std::vector<std::string> values;
+    for(std::stringstream stream(line);stream.good();){
+        std::string value;
+        getline(stream, value, ',');
+        values.push_back(value);
+    }
+    
+    return values;
 }

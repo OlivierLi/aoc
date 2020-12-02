@@ -8,5 +8,5 @@ SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${CLANG_COMPILE_FLAGS}" )
 #Find all cpp files recursively
 file(GLOB_RECURSE SRC "src" "src/*.cpp")
 
-add_executable(aoc2017 ${SRC})
-target_link_libraries(aoc2017)
+add_executable(aoc ${SRC})
+target_link_libraries(aoc)

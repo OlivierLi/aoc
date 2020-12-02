@@ -49,5 +49,5 @@ std::uint64_t aoc2020solution_2(const char* file_name){
 
 void aoc2020_test_1(){
   assert(aoc2020solution_1("./input/2020/day1/day1.txt") == 800139);
-  std::cout << aoc2020solution_2("./input/2020/day1/day1.txt") << std::endl;
+  assert(aoc2020solution_2("./input/2020/day1/day1.txt") == 59885340);
 }

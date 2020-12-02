@@ -1,6 +1,5 @@
 #include <algorithm>
 #include <functional>
-#include "../file_reader.hpp"
 
 using row_t = const std::vector<size_t>&;
 
@@ -39,7 +38,7 @@ size_t solution_2(const std::vector<std::string>& rows, std::function<size_t(row
     return checksum;
 }
 
-void test_2(){
+void aoc2017_test_2(){
     assert(diff_row(parse_line<size_t>("5 1 9 5")) == 8);
     assert(diff_row(parse_line<size_t>("7 5 3")) == 4);
     assert(diff_row(parse_line<size_t>("2 4 6 8")) == 6);

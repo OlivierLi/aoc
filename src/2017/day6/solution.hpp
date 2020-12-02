@@ -1,4 +1,3 @@
-#include "../file_reader.hpp"
 #include <set>
 #include <algorithm>
 #include <iostream>
@@ -62,7 +61,7 @@ auto solution_6(std::vector<size_t> bins){
     return result;
 }
 
-void test_6(){
+void aoc2017_test_6(){
     auto result = solution_6(parse_line<size_t>("5   1   10  0   1   7   13  14  3   12  8   10  7   12  0   6"));
     assert(result.first == 5042);
     assert(result.second == 1086);

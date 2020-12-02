@@ -34,7 +34,7 @@ size_t solution_1(const std::string& line){
     return count;
 }
 
-void test_1(){
+void aoc2017_test_1(){
     assert(solution_1("1122") == 3);
     assert(solution_1("1111") == 4);
     assert(solution_1("1234") == 0);
@@ -54,7 +54,7 @@ size_t solution_1_2(const std::string& line){
     return count;
 }
 
-void test_1_2(){
+void aoc2017_test_1_2(){
     assert(solution_1_2("1212") == 6);
     assert(solution_1_2("1221") == 0);
     assert(solution_1_2("123425") == 4);

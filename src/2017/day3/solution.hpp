@@ -130,7 +130,7 @@ size_t solution_3_2(size_t value){
     return 0;
 }
 
-void test_3(){
+void aoc2017_test_3(){
     assert(solution_3(12) == 3);
     assert(solution_3(23) == 2);
     assert(solution_3(1024) == 31);

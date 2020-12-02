@@ -1,10 +1,11 @@
-#include "../file_reader.hpp"
+#include "../../file_reader.hpp"
 #include <set>
 #include <string>
 #include <algorithm>
 
 std::string solution_7(const char* file_name){
     auto lines = get_lines(file_name);
+    std::cout << lines.size() << std::endl;
     auto parents = read_col<std::string>(lines, 0); 
     auto children_tokens = read_col<std::string>(lines, 3);
 
@@ -25,7 +26,7 @@ std::string solution_7(const char* file_name){
     return diff[0];
 }
 
-void test_7(){
-    assert(solution_7("./input/day7_test.txt") == "tknk");
-    assert(solution_7("./input/day7.txt") == "ahnofa");
+void aoc2017_test_7(){
+    assert(solution_7("./input/2017/day7_test.txt") == "tknk");
+    assert(solution_7("./input/2017/day7.txt") == "ahnofa");
 }

@@ -44,11 +44,11 @@ size_t solution_5(std::vector<int> jumps, bool strange){
     return iterations;
 }
 
-void test_5(){
+void aoc2017_test_5(){
     assert(solution_5({0,3,0,1,-3}, false) == 5);
     assert(solution_5({0,3,0,1,-3}, true) == 10);
 
-    auto lines = get_lines("./input/day5.txt");
+    auto lines = get_lines("./input/2017/day5.txt");
     assert(solution_5(read_col<int>(lines,0), false) == 381680);
     assert(solution_5(read_col<int>(lines,0), true) == 29717847);
 }

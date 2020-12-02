@@ -1,24 +1,28 @@
 #include <iostream>
 #include "file_reader.hpp"
-#include "day1/solution.hpp"
-#include "day2/solution.hpp"
-#include "day3/solution.hpp"
-#include "day4/solution.hpp"
-#include "day5/solution.hpp"
-#include "day6/solution.hpp"
-#include "day7/solution.hpp"
+#include "2017/day1/solution.hpp"
+#include "2017/day2/solution.hpp"
+#include "2017/day3/solution.hpp"
+#include "2017/day4/solution.hpp"
+#include "2017/day5/solution.hpp"
+#include "2017/day6/solution.hpp"
+#include "2017/day7/solution.hpp"
+
+#include "2020/day1/solution.hpp"
 
 int main(int, char**){
 
     //Run the "tests" to validate no solution was broken 
-    //test_1();
-    //test_1_2();
-    //test_2();
-    //test_3();
-    //test_4();
-    //test_5();
-    //test_6();
-    test_7();
+    //aoc2017_test_1();
+    //aoc2017_test_1_2();
+    //aoc2017_test_2();
+    //aoc2017_test_3();
+    //aoc2017_test_4();
+    //aoc2017_test_5();
+    //aoc2017_test_6();
+    //aoc2017_test_7();
+
+    aoc2020_test_1();
 
     return 0;
 }

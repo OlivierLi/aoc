@@ -30,7 +30,7 @@ size_t solution_4(const char* file_name, std::function<bool(const words_t&)> fun
     return std::count_if(word_groups.cbegin(), word_groups.cend(), [func](const std::vector<std::string>& words){return func(words);});
 }
 
-void test_4(){
+void aoc2017_test_4(){
     assert(validate_row(parse_line<std::string>("aa bb cc dd ee")));
     assert(!validate_row(parse_line<std::string>("aa bb cc dd aa")));
     assert(validate_row(parse_line<std::string>("aa bb cc dd aaa")));

@@ -9,6 +9,7 @@
 #include "2017/day7/solution.hpp"
 
 #include "2020/day1/solution.hpp"
+#include "2020/day2/solution.hpp"
 
 int main(int, char**){
 
@@ -22,7 +23,8 @@ int main(int, char**){
     //aoc2017_test_6();
     //aoc2017_test_7();
 
-    aoc2020_test_1();
+    //aoc2020_test_1();
+    aoc2020_test_2();
 
     return 0;
 }

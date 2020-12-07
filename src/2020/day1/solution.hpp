@@ -25,7 +25,7 @@ std::uint64_t aoc2020solution_1(const char* file_name){
     return 0;
 }
 
-std::uint64_t aoc2020solution_2(const char* file_name){
+std::uint64_t aoc2020solution_1_2(const char* file_name){
     auto lines = get_lines(file_name);
     auto numbers = read_col<std::int64_t>(lines, 0); 
     constexpr int64_t target_sum{2020};
@@ -49,5 +49,5 @@ std::uint64_t aoc2020solution_2(const char* file_name){
 
 void aoc2020_test_1(){
   assert(aoc2020solution_1("./input/2020/day1/day1.txt") == 800139);
-  assert(aoc2020solution_2("./input/2020/day1/day1.txt") == 59885340);
+  assert(aoc2020solution_1_2("./input/2020/day1/day1.txt") == 59885340);
 }

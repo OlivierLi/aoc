@@ -44,6 +44,6 @@ std::uint64_t aoc2020solution_2(const char* file_name, bool part2){
 }
 
 void aoc2020_test_2(){
-  assert(aoc2020solution_2("./input/2020/day1/day2.txt", false) == 600);
-  assert(aoc2020solution_2("./input/2020/day1/day2.txt", true) == 245);
+  assert(aoc2020solution_2("./input/2020/day2/day2.txt", false) == 600);
+  assert(aoc2020solution_2("./input/2020/day2/day2.txt", true) == 245);
 }

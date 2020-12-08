@@ -11,6 +11,7 @@
 #include "2020/day1/solution.hpp"
 #include "2020/day2/solution.hpp"
 #include "2020/day3/solution.hpp"
+#include "2020/day8/solution.hpp"
 
 int main(int, char**){
 
@@ -26,7 +27,8 @@ int main(int, char**){
 
     //aoc2020_test_1();
     //aoc2020_test_2();
-    aoc2020_test_3();
+    //aoc2020_test_3();
+    aoc2020_test_8();
 
     return 0;
 }

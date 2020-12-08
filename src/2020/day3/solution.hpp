@@ -19,7 +19,7 @@ std::uint64_t trees_on_slope(const std::vector<std::string>& lines, std::uint64_
 
 std::uint64_t aoc2020solution_3(const char* file_name, const std::vector<std::pair<size_t, size_t>>& slopes){
   auto lines = get_lines(file_name);
-  std::uint64_t result = 1;
+std::uint64_t result = 1;
   for(const auto& x_y : slopes){
     result *= trees_on_slope(lines, x_y.first, x_y.second);
   }
